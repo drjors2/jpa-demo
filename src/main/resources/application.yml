@@ -1,0 +1,21 @@
+
+# zspring.datasource.url: jdbc:h2:mem:testdb
+
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        username: sa
+        password: sa
+        url: jdbc:h2:file:./data2/demo
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        # generate-ddl: true
+        hibernate: 
+            ddl-auto: create-drop
+        show-sql: true
+
+    profiles.active: spring
+
+    h2.console.enabled: true
+
+debug: true
