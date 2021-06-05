@@ -32,12 +32,7 @@ public class Idc {
     @Column(name = "id", columnDefinition = "VARCHAR(255)")
     private String id;
 
-    // @Column(insertable = true)
-    // @Temporal(TemporalType.TIMESTAMP)
     private Date created;
-
-    // @Column(updatable = true, insertable = false)
-    // @Temporal(TemporalType.TIMESTAMP)
     private Date lastUpdated;
 
     @PrePersist
